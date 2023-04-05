@@ -1,4 +1,4 @@
-window.onload = function() {
+function updateClock() {
 
     const hourHand = document.querySelector('.hourHand');
     const minuteHand = document.querySelector('.minuteHand');
@@ -30,7 +30,13 @@ window.onload = function() {
       `;
 
         }
+
+        setDate();
   
-    setInterval(setDate, 1000);
+   
  
 }
+
+updateClock();
+
+setInterval(updateClock, 1000);
